@@ -3,8 +3,8 @@
 
 ## TODO
 
-- [ ] Make it deploy
-- [ ] Scaffoold basic ui with mock data
+- [x] Make it deploy
+- [x] Scaffoold basic ui with mock data
 - [ ] Set up the database
 - [ ] Attach database to ui
 - [ ] Add authentication
