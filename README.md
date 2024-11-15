@@ -5,8 +5,8 @@
 
 - [x] Make it deploy
 - [x] Scaffoold basic ui with mock data
-- [ ] Typeup build process
-- [ ] Set up the database
+- [x] Typeup build process
+- [x] Set up the database
 - [ ] Attach database to ui
 - [ ] Add authentication
 - [ ] add image upload
