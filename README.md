@@ -7,8 +7,8 @@
 - [x] Scaffoold basic ui with mock data
 - [x] Typeup build process
 - [x] Set up the database
-- [ ] Attach database to ui
-- [ ] Add authentication
+- [x] Attach database to ui
+- [x] Add authentication
 - [ ] add image upload
 - [ ] Error management
 - [ ] Routing/image page (parallel route)
