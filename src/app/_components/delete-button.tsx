@@ -9,7 +9,7 @@ export function DeleteButton({ imageId }: { imageId: number }) {
         method: 'DELETE',
       });
       window.location.reload();
-    } catch (error) {
+    } catch (_error) {  // Prefix with underscore to ignore unused var
       alert('Failed to delete image');
     }
   };
