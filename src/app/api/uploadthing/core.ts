@@ -8,9 +8,10 @@ const f = createUploadthing();
 
 export const ourFileRouter = {
   imageUploader: f({ image: { maxFileSize: "4MB" } })
-    .middleware(async (_args) => {
-        // Skip token validation
-        return { userId: "defaultUserId" }; // Use a default or mock user ID
+    .middleware(async (_args) => {  // Changed to _args since we're not using it
+      const user = await auth();
+      if (!user || !user.userId) throw new Error("Unauthorized");
+      return { userId: user.userId };
     })
     .onUploadComplete(async ({ metadata, file }) => {
       if (!metadata.userId) throw new Error("User ID is required");
